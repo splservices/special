@@ -1,0 +1,11 @@
+{
+  "name": "splservices",
+  "version": "1.0.0",
+  "description": "splservices",
+  "main": "index.js",
+  "author": "Pradeep Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

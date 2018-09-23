@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+body{background:#f9f9f9;font-family: 'Comfortaa', cursive;}
+h2{font-weight: bold}
+a{color:black}
+a:hover{color:black; text-decoration: none;}
+input[type="text"], input[type="password"]{border:none; background: transparent; border-bottom:1px solid #e5e5e5; border-radius: 0 }
+input:focus{ background: transparent;}
+.form-control:focus{background: transparent; box-shadow:none; border-color:#1a6acd;}
+.form-group {
+    margin-bottom: 2rem;
+}
+.auth_body{background: #2a75d2; padding-top: 50px; position: absolute; top:0; bottom:0; left:0; right:0}
+.wrapper{ margin: auto; min-height: 700px; background: #ebf2fc; position: absolute; top:10%; bottom:10%; left:10%; right:10%}
+.login_page{ width: 55%; margin: auto;  padding:80px}
+.login_box_footer{display:flex;justify-content: center; margin-bottom:20px;}
+.primary_btn{background:#1a6acd; border:none; padding:10px 30px;}
+.primary_btn:hover{background:#1a6acd; -webkit-box-shadow: -2px -3px 17px -2px rgba(26,106,205,1);
+    -moz-box-shadow: -2px -3px 17px -2px rgba(26,106,205,1);
+    box-shadow: -2px -3px 17px -2px rgba(26,106,205,1);}
+
+.login_box_header{text-align: center; margin-bottom:100px;}
+.bg-light{background:white !important}
+.main-nav{-webkit-box-shadow: 0px 0px 14px -1px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(138,138,138,1);
+    box-shadow: 0px 0px 14px -1px rgba(138,138,138,1);}
+.form-control.search-text{width:400px;}
+.cover{ position: relative; margin-top: 50px;}
+.profile_pic{position: absolute; background:white; width: 204px;   height: 204px;   bottom: -85px;   left: 40px; border:2px solid white; border-radius:10px;}
+.profile_pic img{border-radius:10px;}
+.nav-tabs .nav-link{border:none;}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{border:none;}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{border:none; border-bottom:1px solid #2a75d2; background:transparent}
+
+.card{border:1px solid #e1e1e1; background:transparent; border-radius:5px; padding:20px; margin-bottom:20px;}
+.card-wrapper{padding-top:20px;}
+.card-header{ background:transparent; padding:0; border-bottom:none;}
+.card-body{padding:0}
