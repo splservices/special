@@ -12,7 +12,7 @@ input:focus{ background: transparent;}
 }
 .auth_body{background: #2a75d2; padding-top: 50px; position: absolute; top:0; bottom:0; left:0; right:0}
 .wrapper{ margin: auto; min-height: 700px; background: #ebf2fc; position: absolute; top:10%; bottom:10%; left:10%; right:10%}
-.login_page{ width: 55%; margin: auto;  padding:80px}
+.login_page{ width: 75%; margin: auto;  padding:80px}
 .login_box_footer{display:flex;justify-content: center; margin-bottom:20px;}
 .primary_btn{background:#1a6acd; border:none; padding:10px 30px;}
 .primary_btn:hover{background:#1a6acd; -webkit-box-shadow: -2px -3px 17px -2px rgba(26,106,205,1);

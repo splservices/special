@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const boom = require('express-boom');
@@ -9,10 +10,13 @@ const helmet = require('helmet');
 const app = express();
 
 
-app.get('/', (req, res)=>{
-    res.send({message:'Hello World'})
-})
+app.use(express.static('client/dist/client/'))
 
+app.use((req, res, next)=>{
+    const output = fs.readFileSync('client/dist/client/index.html')
+    res.type('html').send(output);
+    next();
+})
 
 
 
