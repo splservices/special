@@ -25,11 +25,22 @@ const redisOptions = {
 	logErrors: true
 };
 
+app.use(passport.initialize());
+
+app.use(passport.session());
+
+passport.serializeUser((user, done)=>{
+	done(null, user.id)
+})
+
 passport.use(new FacebookStrategy({
 	clientID:constant.facebook.clientID,
 	clientSecret:constant.facebook.clientSecret,
-	callbackURL:'http://localhost:3000/auth/facebook/callback'
+	callbackURL:'http://localhost:3000/api/v1/auth/facebook/callback'
 }, function(accessToken, refreshToken, profile, done){
+	console.log('Auth done');
+	console.log(JSON.stringify(profile))
+	done(null, profile)
 
 }))
 
@@ -40,9 +51,10 @@ logger.info(`Application bootstraping`);
 
 app.use(express.static('client/dist/client/'))
 
-app.get('/login/facebook',(req, res)=>{
-	res.send('loginng with facebook')
-})
+
+app.use('/', index)
+
+
 
 app.use((req, res, next)=>{
     const output = fs.readFileSync('client/dist/client/index.html')
